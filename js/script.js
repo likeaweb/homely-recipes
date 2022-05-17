@@ -7,6 +7,7 @@ const searchable = [
   "Rice Neer Dosa",
   "Special Chicken Masala",
   "Traditional Rava Laddo",
+  "Pork Indad"
 ];
 
 const searchableLink = [
@@ -15,6 +16,7 @@ const searchableLink = [
   "collections/dosa-recipes/rice-neer-dosa.html",
   "collections/chicken-recipes/special-chicken-masala.html",
   "collections/rava-recipes/traditional-rava-laddo.html",
+  "collections/pork/pork-indad.html",
 ];
 
 // filter the searchableLink array

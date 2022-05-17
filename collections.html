@@ -1,209 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collections</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="./css/collections.css" />
-    <link rel="stylesheet" href="../../css/collections.css" />
-    <script src="./js/components/logo.js" defer></script>
-    <script src="./js/components/navigation.js" defer></script>
-    <script src="./js/script.js" defer></script>
-    <script src="./js/components/sidebar.js" defer></script>
-    <script src="./js/components/breadcrumbs.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/8eeda7b9a9.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="navigation container">
-          <!-- a href to homepage  -->
-          <a href="index.html">
-            <div class="logo__wrapper">
-              <span class="logo | mdc-theme--primary"
-                ><strong>Octavia</strong></span
-              >
-            </div>
-          </a>
-          <div
-            class="nav__heading | display-large char | mdc-theme--inverse-primary"
-            data-word="Recipes"
-          >
-            Recipes
-          </div>
 
-          <navigation-component></navigation-component>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="./css/collections.css" />
+  <link rel="stylesheet" href="../../css/collections.css" />
+  <script src="./js/components/logo.js" defer></script>
+  <script src="./js/components/navigation.js" defer></script>
+  <script src="./js/script.js" defer></script>
+  <script src="./js/components/sidebar.js" defer></script>
+  <script src="./js/components/breadcrumbs.js" defer></script>
+  <script src="https://kit.fontawesome.com/8eeda7b9a9.js" crossorigin="anonymous" defer></script>
+</head>
 
-          <div class="search-wrapper-placeholder">
-            <div class="wrapper">
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Type to search"
-                autocomplete="off"
-                data-state="fa-autocomplete"
-              />
-              <button data-state="fa-search-icon" class="btn-fa-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <div class="results"></div>
-            </div>
+<body>
+  <header>
+    <nav>
+      <div class="navigation container">
+        <!-- a href to homepage  -->
+        <a href="index.html">
+          <div class="logo__wrapper">
+            <span class="logo | mdc-theme--primary"><strong>Octavia</strong></span>
           </div>
+        </a>
+        <div class="nav__heading | display-large char | mdc-theme--inverse-primary" data-word="Recipes">
+          Recipes
         </div>
-      </nav>
-    </header>
-    <div class="wrapper__collections-aside | container">
-      <main>
-        <section>
-          <div class="hero-collections">
-            <h1
-              class="hero-collections__heading | gap-top-1000 flow | display-small"
-            >
-              Collections
-            </h1>
-            <p class="hero-collections__para">
-              A visual view of all of the latest and greatest recipes, organized
-              in chronological order for your viewing pleasure.
-            </p>
+
+        <navigation-component></navigation-component>
+
+        <div class="search-wrapper-placeholder">
+          <div class="wrapper">
+            <input type="search" name="search" id="search" placeholder="Type to search" autocomplete="off"
+              data-state="fa-autocomplete" />
+            <button data-state="fa-search-icon" class="btn-fa-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="results"></div>
           </div>
-        </section>
-        <section>
-          <div class="recipes-collections | flow">
-            <div class="recipes-collections__cards">
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="./collections/fish-curry/fish-curry-special.html">
-                    <img
-                      src="./assets/images/recipes/fish-curry-fish-curry-special.jpeg"
-                      width="106"
-                      height="71.16666667"
-                      alt=""
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                  /></a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  <a href="./collections/fish-curry/fish-curry-special.html"
-                    >Fish Curry</a
-                  >
-                </h3>
-              </div>
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="./collections/chicken-curry/chicken-coorg-curry.html"
-                    ><img
-                      src="./assets/images/recipes/chicken-curry-chicken-coorg-curry.jpg"
-                      width="106"
-                      height="71.16666667"
-                      alt=""
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                  /></a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  <a href="./collections/chicken-curry/chicken-coorg-curry.html"
-                    >Chicken Curry</a
-                  >
-                </h3>
-              </div>
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="./collections/rice-dosas/rice-neer-dosa.html"
-                    ><img
-                      src="./assets/images/recipes/rice-dosas-rice-neer-dosa.jpg"
-                      width="106"
-                      height="71.16666667"
-                      alt=""
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                  /></a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  <a href="./collections/rice-dosas/rice-neer-dosa.html"
-                    >Rice Dosas</a
-                  >
-                </h3>
-              </div>
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="./collections/sooji/sooji-laddu.html"
-                    ><img
-                      src="./assets/images/recipes/sooji-sooji-laddu.jpg"
-                      alt=""
-                      width="106"
-                      height="71.16666667"
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                  /></a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  <a href="./collections/sooji/sooji-laddu.html">Sooji</a>
-                </h3>
-              </div>
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="./collections/dessert/bread-butter-pudding.html"
-                    ><img
-                      src="./assets/images/recipes/dessert-bread-and-butter-pudding.jpg"
-                      width="106"
-                      height="71.16666667"
-                      alt=""
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                  /></a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  <a href="./collections/dessert/bread-butter-pudding.html"
-                    >Dessert</a
-                  >
-                </h3>
-              </div>
-              <div class="recipes-collections__cards__card">
-                <div>
-                  <a href="">
-                    <img
-                      src="./assets/images/collections/snacks.jpg"
-                      width="106"
-                      height="71.16666667"
-                      alt=""
-                      srcset=""
-                      class="recipes-collections__cards__card__img"
-                    />
-                  </a>
-                </div>
-                <h3 class="recipes-collections__cards__card__headline">
-                  Snacks
-                </h3>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <aside>
-        <sidebar-component></sidebar-component>
-      </aside>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="footer__primary">
-          <logo-component></logo-component>
-          <navigation-component></navigation-component>
         </div>
       </div>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <div class="wrapper__collections-aside | container">
+    <main>
+      <section>
+        <div class="hero-collections">
+          <h1 class="hero-collections__heading | gap-top-1000 flow | display-small">
+            Collections
+          </h1>
+          <p class="hero-collections__para">
+            A visual view of all of the latest and greatest recipes, organized
+            in chronological order for your viewing pleasure.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="recipes-collections | flow">
+          <div class="recipes-collections__cards">
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/fish-curry/fish-curry-special.html">
+                  <img src="./assets/images/recipes/fish-curry-fish-curry-special.jpeg" width="106" height="71.16666667"
+                    alt="" srcset="" class="recipes-collections__cards__card__img" /></a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/fish-curry/fish-curry-special.html">Fish Curry</a>
+              </h3>
+            </div>
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/chicken-curry/chicken-coorg-curry.html"><img
+                    src="./assets/images/recipes/chicken-curry-chicken-coorg-curry.jpg" width="106" height="71.16666667"
+                    alt="" srcset="" class="recipes-collections__cards__card__img" /></a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/chicken-curry/chicken-coorg-curry.html">Chicken Curry</a>
+              </h3>
+            </div>
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/rice-dosas/rice-neer-dosa.html"><img
+                    src="./assets/images/recipes/rice-dosas-rice-neer-dosa.jpg" width="106" height="71.16666667" alt=""
+                    srcset="" class="recipes-collections__cards__card__img" /></a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/rice-dosas/rice-neer-dosa.html">Rice Dosas</a>
+              </h3>
+            </div>
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/sooji/sooji-laddu.html"><img src="./assets/images/recipes/sooji-sooji-laddu.jpg"
+                    alt="" width="106" height="71.16666667" srcset=""
+                    class="recipes-collections__cards__card__img" /></a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/sooji/sooji-laddu.html">Sooji</a>
+              </h3>
+            </div>
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/dessert/bread-butter-pudding.html"><img
+                    src="./assets/images/recipes/dessert-bread-and-butter-pudding.jpg" width="106" height="71.16666667"
+                    alt="" srcset="" class="recipes-collections__cards__card__img" /></a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/dessert/bread-butter-pudding.html">Dessert</a>
+              </h3>
+            </div>
+            <div class="recipes-collections__cards__card">
+              <div>
+                <a href="./collections/pork/pork-indad.html">
+                  <img src="./assets/images/collections/snacks.jpg" width="106" height="71.16666667" alt="" srcset=""
+                    class="recipes-collections__cards__card__img" />
+                </a>
+              </div>
+              <h3 class="recipes-collections__cards__card__headline">
+                <a href="./collections/pork/pork-indad.html">Pork</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <sidebar-component></sidebar-component>
+    </aside>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer__primary">
+        <logo-component></logo-component>
+        <navigation-component></navigation-component>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

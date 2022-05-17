@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+  <title>Pork Indad</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/recipes.css" />
+  <link rel="stylesheet" href="../../css/breadcrumbs.css" />
+  <script src="../../js/script.js" defer></script>
+  <script src="../../js/components/navigation-recipe.js" defer></script>
+  <script src="../../js/components/breadcrumbs.js" defer></script>
+  <script src="../../js/components/sidebar-recipe.js" defer></script>
+  <script src="../../js/components/logo.js" defer></script>
+  <!-- <script src="../../js/components/recipeinfo.js" defer></script> -->
+  <script src="../../js/components/footer.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navigation | container">
+        <div class="logo__wrapper">
+          <a href="/index.html">
+            <span class="logo | mdc-theme--primary"><strong>Octavia</strong></span>
+          </a>
+        </div>
+        <div class="nav__heading | | display-large char | mdc-theme--inverse-primary" data-word="Recipes"
+          data-state="recipe">
+          Recipes
+        </div>
+        <!-- Add navigation component from navigation.js -->
+        <navigation-recipe-component></navigation-recipe-component>
+        <div class="search-wrapper-placeholder">
+          <div class="wrapper">
+            <input type="search" name="search" id="search" placeholder="Type to search" autocomplete="off"
+              data-state="fa-autocomplete" />
+            <button data-state="fa-search-icon" class="btn-fa-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="results"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper__collections-aside | container">
+    <main>
+      <!-- breadcrumb -->
+
+      <breadcrumbs-component>
+        <span slot="breadcrumb-1--name">Home</span>
+        <span slot="breadcrumb-2--name">Collections</span>
+        <a slot="breadcrumb-3--link" href="">
+          <span slot="breadcrumb-3--name">Pork</span></a>
+        <a slot="breadcrumb-4--link" href="">
+          <span slot="breadcrumb-4--name">Pork Indad</span></a>
+      </breadcrumbs-component>
+
+      <article>
+        <section>
+          <div class="recipe-hero | gap-top-600 flow flow-space-600">
+            <h1 class="recipe-hero__title | | display-small mdc-theme--primary">
+              Pork Indad
+            </h1>
+            <div class="recipe-hero__wrapper | grid">
+              <picture>
+                <source media="(min-width:40em)" srcset="
+                      ../../assets/images/recipes/fish-curry-fish-curry-special.jpeg
+                    " />
+                <source media="(max-width:41em)" srcset="
+                      ../../assets/images/recipes/fish-curry-fish-curry-special.jpeg
+                    " />
+                <img src="../../assets/images/recipes/fish-curry-fish-curry-special.jpeg" width="333" height="460"
+                  alt="Fish Curry Special dish in a bowl" />
+                <cite data-state="image-attribution">Photo by
+                  <a
+                    href="https://unsplash.com/@lamposaritonang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lampos
+                    Aritonang</a>
+                  on
+                  <a
+                    href="https://unsplash.com/s/photos/food-vector?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </cite>
+              </picture>
+              <div class="recipe-hero__wrapper__content | grid">
+                <div class="recipe-description | grid">
+                  <div class="recipe-description-preparation">
+                    <div class="recipe-preparation">Preparation</div>
+                    <span class="recipe-preparation-value">45 min</span>
+                  </div>
+                  <div class="recipe-description-total-time">
+                    <div class="recipe-total-time">Total Time</div>
+                    <span class="recipe-total-time-value">45 min</span>
+                  </div>
+                  <div class="recipe-description-servings">
+                    <div class="recipe-servings">Servings</div>
+                    <span class="recipe-servings-value">6 servings, about 2 Tbsp. each
+                    </span>
+                  </div>
+                </div>
+                <div class="recipe-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ab repellendus inventore nobis consectetur? Consectetur
+                    nostrum quos ut tempore eum unde facilis, odit placeat
+                    alias possimus nesciunt aut excepturi dolores voluptas!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul class="recipe-social body-small | flex flex--wrap" role="list">
+              <li class="pinterest">Pin it</li>
+              <li class="facebook">Facebook</li>
+              <li class="twitter">Twitter</li>
+              <li class="email">Email</li>
+              <li class="print">Print</li>
+              <li class="instagram">Instagram</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="gap-top-1000">
+            <div class="recipe-details | grid">
+              <div class="ingredients | flow">
+                <h2 class="ingredients__heading | display-smaller">
+                  Ingredients
+                </h2>
+                <ul class="ingredients__list" role="list" data-state="list">
+                  <li>1 kg of pork with the rind</li>
+                  <li>MASALA FOR GRINDING</li>
+                  <li>1 piece of turmeric.</li>
+                  <li>1/2 teaspoon jeera</li>
+                  <li>15 black peppercorns</li>
+                  <li>4 medium-sized onions</li>
+                  <li>6–8 dry chillies</li>
+                  <li>8 garlic cloves.</li>
+                  <li>A small tamarind ball.</li>
+                  <li>A tiny piece of ginger.</li>
+                </ul>
+              </div>
+              <div class="method | flow">
+                <h2 class="method__heading | display-smaller">Method</h2>
+                <ol class="method__list">
+                  <li>
+                    <label for="toggle">
+                      Cut pork into slices with rind and flesh in each slice.
+                    </label><input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Wash and boil the pork before browning it in oil.
+                    </label><input id="toggle" type="checkbox" />
+                    <!-- <input id="toggle" type="checkbox" checked /> -->
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Fry for 5 more minutes after adding the ground masala.
+                    </label><input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Add 2 cinnamon sticks, 4 cloves, and some mint leaves.
+                    </label><input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Add vinegar and salt to taste.
+                    </label><input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Add a few sugars for taste.
+                    </label>
+                    <input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Cook the meat until it is tender.
+                    </label>
+                    <input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">
+                      Then cast it off from the fire.
+                    </label><input id="toggle" type="checkbox" />
+                  </li>
+                  <li>
+                    <label for="toggle">Serve with a side of rice.</label>
+                    <input id="toggle" type="checkbox" />
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <sidebar-recipe-component></sidebar-recipe-component>
+      <recipeinfo-component></recipeinfo-component>
+    </aside>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer__primary">
+        <logo-component></logo-component>
+        <navigation-recipe-component></navigation-recipe-component>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
